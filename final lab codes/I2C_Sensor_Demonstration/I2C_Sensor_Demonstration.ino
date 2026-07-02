@@ -34,7 +34,6 @@ const byte MPU_REG_SMPLRT_DIV    = 0x19;
 const byte MPU_REG_CONFIG        = 0x1A;
 const byte MPU_REG_GYRO_CONFIG   = 0x1B;
 const byte MPU_REG_ACCEL_CONFIG  = 0x1C;
-const byte MPU_REG_ACCEL_CONFIG2 = 0x1D;
 const byte MPU_REG_PWR_MGMT_1    = 0x6B;
 const byte MPU_REG_PWR_MGMT_2    = 0x6C;
 const byte MPU_REG_WHO_AM_I      = 0x75;
@@ -412,11 +411,6 @@ bool initMPURaw()
   writeMPUByte(
     MPU_REG_ACCEL_CONFIG,
     0x00
-  );
-
-  writeMPUByte(
-    MPU_REG_ACCEL_CONFIG2,
-    0x03
   );
 
   delay(300);

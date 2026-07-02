@@ -6,7 +6,7 @@ Each program is stored in a separate folder, and the `.ino` filename should matc
 ## Project Structure
 
 ```text
-Robot_Car_Arduino/
+final_lab_codes/
 ├── Obstacle_Avoidance/
 │   └── Obstacle_Avoidance.ino
 ├── Light_Following_PD/
